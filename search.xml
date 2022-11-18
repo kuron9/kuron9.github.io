@@ -20,31 +20,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/movie/idnex.html"/>
-      <url>/movie/idnex.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/idnex.html"/>
       <url>/about/idnex.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影</title>
-      <link href="/music/idnex.html"/>
-      <url>/music/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -67,6 +45,28 @@
       <title>tags</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/music/idnex.html"/>
+      <url>/music/idnex.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/movie/idnex.html"/>
+      <url>/movie/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
