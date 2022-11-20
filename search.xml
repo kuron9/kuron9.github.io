@@ -5,8 +5,8 @@
     
     <entry>
       <title>第一篇文章</title>
-      <link href="/2022/11/17/test/"/>
-      <url>/2022/11/17/test/</url>
+      <link href="/post/5c2fafc7.html"/>
+      <url>/post/5c2fafc7.html</url>
       
         <content type="html"><![CDATA[<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2>]]></content>
       
@@ -31,6 +31,17 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>link</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -42,9 +53,9 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/music/idnex.html"/>
-      <url>/music/idnex.html</url>
+      <title>音乐</title>
+      <link href="/movie/idnex.html"/>
+      <url>/movie/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -53,9 +64,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/movie/idnex.html"/>
-      <url>/movie/idnex.html</url>
+      <title>电影</title>
+      <link href="/music/idnex.html"/>
+      <url>/music/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
