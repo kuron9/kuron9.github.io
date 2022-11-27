@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>PC端网页特效</title>
+      <link href="/post/b70e4979.html"/>
+      <url>/post/b70e4979.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>目标</strong></p><ul><li>能够说出常见的offset系列属性的作用</li><li>能够说出常见的client系列属性的作用</li><li>能够说出常见的scroll系列属性的作用</li><li>能够封装简单的动画函数</li><li>能够写出网页轮播图案例</li></ul><h1 id="元素偏移量offset系列"><a href="#元素偏移量offset系列" class="headerlink" title="元素偏移量offset系列"></a>元素偏移量offset系列</h1><p>offset翻译过来就是偏移量，使用offset系列相关属性可以动态的得到该元素的位置（偏移量）、大小等。</p><ul><li>获得元素距离带有定位父元素的位置</li><li>获得元素自身的大小（宽度高度）</li><li>注意：返回的数值都不带单位</li></ul><h3 id="offset系列常用的属性"><a href="#offset系列常用的属性" class="headerlink" title="offset系列常用的属性"></a>offset系列常用的属性</h3><pre><code>element.offsetParent  返回该元素带有定位的父级元素，如果父级都没有定位则返回bodyelement.offsetTop     返回元素相对带有定位父元素是上方的偏移element.offsetLeft    返回元素相对带有定位父元素左边框的偏移element.offsetWidth   返回自身包括padding、边框、内容区的宽度，返回数值不带单位element.offsetHeight  返回自身包括padding、边框、内容区的宽度，返回数值不带单位</code></pre><h3 id="offset和style的区别"><a href="#offset和style的区别" class="headerlink" title="offset和style的区别"></a>offset和style的区别</h3><p><strong>offset</strong></p><ul><li>offset可以得到任意表中的样式值</li><li>offset系列获得的数值是没有单位的</li><li>offsetWidth包含padding+border+width</li><li>offsetWidth等属性是只读属性，只能获取不能赋值</li><li>想要获取元素大小位置，用offset更合适</li></ul><p><strong>style</strong></p><ul><li>style只能获取到行内样式表中的元素值</li><li>style.width获取的是带有单位的字符串</li><li>style.width不包含padding+border</li><li>style.width是可读写属性，既能读取又能赋值</li><li>想要给元素更改值，用style才能更改</li></ul><h1 id="元素可视区client系列"><a href="#元素可视区client系列" class="headerlink" title="元素可视区client系列"></a>元素可视区client系列</h1><p>client翻译过来就是客户端，使用client系列相关的属性来获取元素可视区的相关信息。通过client系列的相关属性可以动态的得到该元素的边框大小、元素大小等</p><h3 id="client系列属性"><a href="#client系列属性" class="headerlink" title="client系列属性"></a>client系列属性</h3><pre><code>element.clientTop    返回元素上边框大小element.clientLeft   返回元素左边框大小element.clientWidth  返回自身包括padding、内容区的宽度，不含边框，返回数值不带单位element.clientHeight 返回自身包括padding、内容区的高度，不含边框，返回数值不带单位</code></pre><h2 id="立即执行函数"><a href="#立即执行函数" class="headerlink" title="立即执行函数"></a>立即执行函数</h2><p>立即执行函数(funcation(){})()<br>主要作用：创建一个独立的作用域、</p><pre><code>    // 1.立即执行函数:不需要调用，立马能够自己执行的函数    // 2.写法    // (function () &#123; &#125;)() 或者 (function()&#123;&#125;())    (function (a, b) &#123;        console.log(a + b);    &#125;)(1, 2);//第二个括号可以看做是调用函数    (function sum(a, b) &#123;        console.log(a + b);    &#125;(2, 3));    // 3.立即执行函数最大的作用就是 独立创建了一个作用域，里面的所有变量都是局部变量，不会有命名冲突</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+            <tag> JS </tag>
+            
+            <tag> 网页特效 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BOM浏览器对象模型</title>
       <link href="/post/de3efe0d.html"/>
       <url>/post/de3efe0d.html</url>
@@ -23,6 +52,8 @@
             <tag> web </tag>
             
             <tag> BOM </tag>
+            
+            <tag> JS </tag>
             
         </tags>
       
@@ -58,17 +89,6 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>link</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -91,9 +111,9 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/music/idnex.html"/>
-      <url>/music/idnex.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -102,9 +122,20 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/music/idnex.html"/>
+      <url>/music/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
