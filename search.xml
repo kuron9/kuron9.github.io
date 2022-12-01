@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>本地存储</title>
+      <link href="/post/5cb41814.html"/>
+      <url>/post/5cb41814.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>目标：</strong></p><ol><li>能够写出sessionStorge数据的存储以及获取</li><li>能够写出localStorage数据的存储以及获取</li><li>能够说出它们两者的区别</li></ol><h1 id="本地存储"><a href="#本地存储" class="headerlink" title="本地存储"></a>本地存储</h1><p>随着互联网的快速发展，基于网页的应用越来越普遍，同时也变得越来越复杂，为了满足各种各样的需求，会经常性在本地存储大量的数据，HTML5规范提出了相关解决方案。</p><p><strong>本地存储特性</strong></p><ol><li>数据存储在用户浏览器中</li><li>设置、读取方便、甚至页面刷新不丢失数据</li><li>容量较大，sessionStorage约5M，localStorage约20M</li><li>只能存储字符串，可以将对象JSON.stringify()编码后存储</li></ol><h1 id="window-sessionStorage"><a href="#window-sessionStorage" class="headerlink" title="window.sessionStorage"></a>window.sessionStorage</h1><ol><li>生命周期未关闭浏览器窗口</li><li>在同一个窗口下数据可以共享</li><li>以键值对的形式存储使用</li></ol><p><strong>存储数据</strong></p><pre><code>sessionStroage.setItem(value,key)</code></pre><p><strong>获取数据</strong></p><pre><code>sessionStroage.getItem(key)</code></pre><p><strong>删除数据</strong></p><pre><code>sessionStroage.removeItem(key)</code></pre><p><strong>删除所有数据</strong></p><pre><code>sessionStroage.clear()</code></pre><h1 id="window-localStorage"><a href="#window-localStorage" class="headerlink" title="window.localStorage"></a>window.localStorage</h1><ol><li>生命周期永久生效，除非手动删除，否则页面关闭也会存在</li><li>可以多窗口共享</li><li>以键值对的方式存储使用</li></ol><p><strong>存储数据</strong></p><pre><code>localStorage.setItem(key,value)</code></pre><p><strong>获取数据</strong></p><pre><code>localStorage.getItem(key)</code></pre><p><strong>删除数据</strong></p><pre><code>localStorage.removeItem(key)</code></pre><p><strong>删除所有数据</strong></p><pre><code>localStorage.clear()</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+            <tag> BOM </tag>
+            
+            <tag> JS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PC端网页特效</title>
       <link href="/post/b70e4979.html"/>
       <url>/post/b70e4979.html</url>
@@ -22,9 +51,9 @@
             
             <tag> web </tag>
             
-            <tag> 网页特效 </tag>
-            
             <tag> JS </tag>
+            
+            <tag> 网页特效 </tag>
             
         </tags>
       
@@ -51,9 +80,9 @@
             
             <tag> web </tag>
             
-            <tag> JS </tag>
-            
             <tag> BOM </tag>
+            
+            <tag> JS </tag>
             
         </tags>
       
@@ -89,9 +118,9 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -111,17 +140,6 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/movie/idnex.html"/>
-      <url>/movie/idnex.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影</title>
       <link href="/music/idnex.html"/>
       <url>/music/idnex.html</url>
@@ -133,9 +151,20 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/movie/idnex.html"/>
+      <url>/movie/idnex.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
