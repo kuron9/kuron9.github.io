@@ -4,13 +4,56 @@
   
     
     <entry>
+      <title>前端工程化与webpack</title>
+      <link href="/post/87137f47.html"/>
+      <url>/post/87137f47.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>学习目标：</strong></p><ol><li>理解什么是前端工程化</li><li>了解webpack的基本用法</li><li>知道webpack在项目中的作用</li><li>理解webpack中的核心理念</li></ol><p><strong>前端工程化</strong><br>在企业级的前端开发项目中，把前端开发所需的工具、技术、流程、经验等进行规范化、标准化。</p><ol><li>模块化（js的模块化、css的模块化、资源的模块化）</li><li>组件化（复用吸纳有的UI结构、样式、行为）</li><li>规范化（目录结构的划分、编码规范化、接口规范化、文档规范化、Git分支管理）</li><li>自动化（自动化构建、自动部署、自动化测试）</li></ol><h1 id="webpack的基本使用"><a href="#webpack的基本使用" class="headerlink" title="webpack的基本使用"></a>webpack的基本使用</h1><p>概念：webpack是前端工程化的具体解决方案。</p><p>主要功能：提供了友好的前端模块化开发支持，以及代码压缩混淆、处理浏览器端JavaScript的兼容性、性能优化等强大功能。</p><h2 id="在项目中安装webpack"><a href="#在项目中安装webpack" class="headerlink" title="在项目中安装webpack"></a>在项目中安装webpack</h2><p>在终端中运行如下命令，安装webpack相关的两个包：</p><p><code>npm install webpack webpack-cli -D</code></p><ul><li><strong>-S 是 –save 的简写</strong></li><li><strong>-D 是 –save–dev 的简写</strong></li></ul><h2 id="在项目中配置webpack"><a href="#在项目中配置webpack" class="headerlink" title="在项目中配置webpack"></a>在项目中配置webpack</h2><p>1.在项目根目录中，创建名为webpack.config.js的webpack配置文件，并初始化如下配置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">mode:&#x27;development&#x27; // mode 用来指定构建模式，可选值有 development 和 production</span><br><span class="line">// entry:&#x27;指定要处理哪个文件&#x27;</span><br><span class="line">    // entry:path.join(__dirname,&#x27;./src/index.js&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2.在package.json的scripts节点下，新建dev脚本如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;:&#123;</span><br><span class="line">&quot;dev&quot;:&quot;webpack&quot; // script节点下的脚本，可以通过npm run 执行。例如 npm run dev </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>3.在终端中运行npm run dev命令，启动webpack进行项目的打包构建</p><h2 id="webpack中的默认约定"><a href="#webpack中的默认约定" class="headerlink" title="webpack中的默认约定"></a>webpack中的默认约定</h2><p>在webpack 4.x和5.x中，有如下默认约定：</p><ol><li>默认的打包入口文件为 src –&gt; index.js</li><li>默认的文件输出路径为 dist –&gt; main.js</li></ol><p><strong>注意：可以在webpack.config.js中修改打包的默认约定</strong></p><h2 id="自定义打包的入口与出口"><a href="#自定义打包的入口与出口" class="headerlink" title="自定义打包的入口与出口"></a>自定义打包的入口与出口</h2><p>在webpack.config.js配置文件中，通过entry节点指定打包的入口。通过output节点指定打包的出口。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const path = require(&#x27;path&#x27;) //导入node.js中专门操作路径的模块</span><br><span class="line"></span><br><span class="line">module.exports = &#123;</span><br><span class="line">  entry:path.join(__dirname,&#x27;./src/index.js&#x27;), // 打包文件入口路径</span><br><span class="line">  output: &#123;</span><br><span class="line">    path:path.join(__dirname,&#x27;./dist&#x27;), //输出文件存放 </span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+            <tag> Vue </tag>
+            
+            <tag> webpack </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>服务器的概念与初识Ajax</title>
       <link href="/post/47f61257.html"/>
       <url>/post/47f61257.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><strong>目标</strong></p><ol><li>能够知道和服务器相关的概念</li><li>能够知道客户端和服务器通信的过程</li><li>能够知道数据也是一种资源</li><li>能够说出什么是Ajax以及应用场景</li><li>能够使用jQUery中的Ajax函数请求数据</li><li>能够知道接口和接口文档的概念</li></ol><h1 id="客户端与服务器"><a href="#客户端与服务器" class="headerlink" title="客户端与服务器"></a>客户端与服务器</h1><h2 id="上网的目的"><a href="#上网的目的" class="headerlink" title="上网的目的"></a>上网的目的</h2><p>上网的本质目的：通过互联网的方式获取和消费资源</p><h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器##"></a>服务器##</h2><p>上网过程中，负责存放和对外界提供资源的电脑，叫做服务器</p><h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p>上网过程中，负责获取和消费资源的电脑，叫做客户端</p><h1 id="URL地址"><a href="#URL地址" class="headerlink" title="URL地址"></a>URL地址</h1><h2 id="URL地址的概念"><a href="#URL地址的概念" class="headerlink" title="URL地址的概念"></a>URL地址的概念</h2><p>URL中文名称为 <strong>统一资源定位符</strong>，用于标识互联网上每个资源的唯一存放位置。浏览器只有通过URL地址，才能正确的定位资源存放的位置，从而成功访问到对应的资源。</p><h2 id="URL地址的组成部分"><a href="#URL地址的组成部分" class="headerlink" title="URL地址的组成部分"></a>URL地址的组成部分</h2><p>URL地址一般由三部分组成：</p><ol><li>客户端与服务器之间的<strong>通信协议</strong></li><li>存有该资源的<strong>服务器名称</strong></li><li>资源在服务器上<strong>具体的局方位置</strong></li></ol><h1 id="分析网页的打开过程"><a href="#分析网页的打开过程" class="headerlink" title="分析网页的打开过程"></a>分析网页的打开过程</h1><ol><li>客户端请求服务器</li><li>服务器处理这次请求</li><li>服务器响应客户端</li></ol><p>客户端</p><ol><li>打开浏览器</li><li>输入要访问的网站地址</li><li>放服务器发起请求</li></ol><p>服务器</p><ol><li>接收到客户端发来的请求</li><li>在内部处理这次请求，找到相关资源</li><li>把找到的资源响应（发送）给客户端</li></ol><p><strong>注意</strong></p><ul><li>客户端与服务器之间的通信过程，分为** 请求-处理-响应 **三个步骤</li><li>网页中的每个资源，都是通过 ** 请求-处理-响应 ** 的方式从服务器获取回来的</li></ul><h1 id="服务器对外提供了那些资源"><a href="#服务器对外提供了那些资源" class="headerlink" title="服务器对外提供了那些资源"></a>服务器对外提供了那些资源</h1><p><strong>数据是网页的灵魂</strong></p><h2 id="资源的请求方式"><a href="#资源的请求方式" class="headerlink" title="资源的请求方式"></a>资源的请求方式</h2><ul><li>get请求常用于获取服务器资源</li><li>post请求常用于向服务器提交数据</li></ul><h1 id="了解Ajax"><a href="#了解Ajax" class="headerlink" title="了解Ajax"></a>了解Ajax</h1><h2 id="什么是Ajax"><a href="#什么是Ajax" class="headerlink" title="什么是Ajax"></a>什么是Ajax</h2><p>Ajax的全称是 Asynchronous Javascript And XML (异步JavaScript和XML)<br>通俗的理解： 在网页中利用XMLHttpReQuest对象和服务器惊醒数据交互的方式，就是Ajax</p><h2 id="学Ajax的目的"><a href="#学Ajax的目的" class="headerlink" title="学Ajax的目的"></a>学Ajax的目的</h2><p>Ajax能让我们轻松实现网页与服务器之间的数据交互</p><h2 id="Ajax的经典应用场景"><a href="#Ajax的经典应用场景" class="headerlink" title="Ajax的经典应用场景"></a>Ajax的经典应用场景</h2><ul><li>用户名检测：注册用户时，通过Ajax的形式，动态检测用户名是否被占用</li><li>搜索提示：当输入关键字时，通过Ajax的形式，动态加载搜索提示列表</li><li>数据分页显示：当点击页码值得时候，通过Ajax的形式，根据页码值动态刷新表格的数据</li><li>数据的增删改查：数据的增删改查操作，通过Ajax的形式，实现数据的交互</li></ul><h1 id="jQuery中的Ajax"><a href="#jQuery中的Ajax" class="headerlink" title="jQuery中的Ajax"></a>jQuery中的Ajax</h1><h2 id="了解jQuery中的ajax"><a href="#了解jQuery中的ajax" class="headerlink" title="了解jQuery中的ajax"></a>了解jQuery中的ajax</h2><p>浏览器中提供的XMLHTTPRequest用法比较复杂，所以jQuery对XMLHTTPRequest进行了封装，提供了一系列Ajax相关的函数，极大地降低了Ajax的难度</p><p>JQuery中发起Ajax请求最常用的三个方法如下：</p><ul><li>$.get()</li><li>$.post()</li><li>$.ajax()</li></ul><h2 id="get-函数的语法"><a href="#get-函数的语法" class="headerlink" title="$.get()函数的语法"></a>$.get()函数的语法</h2><p>jQuery中$.get()函数的功能单一，专门用来发起get请求，从而将服务器上的资源请求到客户端来进行使用。<br>$.get()的语法如下：</p><pre><code>$.get(url,[data],[callback])</code></pre><p>其中三个参数意义如下：</p><ul><li>参数名     参数类型    是否必选   说明</li><li>url        string     是        要请求资源的地址</li><li>data       object     否        请求资源期间携带的参数</li><li>callback   funcation  否        请求成功时的回调函数</li></ul><h2 id="post-函数的语法"><a href="#post-函数的语法" class="headerlink" title="$.post()函数的语法"></a>$.post()函数的语法</h2><p>jQuery中$.post()函数的功能单一，专门用来发起post请求，从而向服务器提交数据。<br>$.post()的语法如下：</p><pre><code>$.post(url,[data],[callback])</code></pre><p>其中三个参数意义如下：</p><ul><li>参数名     参数类型    是否必选   说明</li><li>url        string     是        提交数据的地址</li><li>data       object     否        要提交的数据</li><li>callback   funcation  否        提交成功时的回调函数</li></ul><h2 id="ajax-函数的语法"><a href="#ajax-函数的语法" class="headerlink" title="$.ajax()函数的语法"></a>$.ajax()函数的语法</h2><p>相比于$.get()和$.post()，jQuery中提供的$.ajax()函数是一个功能比较综合的函数，它允许我们对Ajax请求进行更详细的配置。<br>$.ajax()的语法如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">  type:&#x27;&#x27;, //请求的方式，例如GET或POST</span><br><span class="line">  url:&#x27;&#x27;,  //请求的URL地址</span><br><span class="line">data:&#123;&#125;, //这次请求要携带的数据 </span><br><span class="line">success:funcation(res)&#123;&#125; //请求成功之后的回调函数</span><br><span class="line">)&#125;</span><br></pre></td></tr></table></figure><h1 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h1><h2 id="接口的概念"><a href="#接口的概念" class="headerlink" title="接口的概念"></a>接口的概念</h2><p>使用AJax请求数据是，被请求的URL地址，就叫做<strong>数据接口（简称接口）</strong>。同时，每个接口必须有自己的请求方式。</p><h2 id="接口文档"><a href="#接口文档" class="headerlink" title="接口文档"></a>接口文档</h2><p>接口怎么使用的接口说明文档</p><h2 id="组成部分"><a href="#组成部分" class="headerlink" title="组成部分"></a>组成部分</h2><ol><li>接口名称</li><li>接口url</li><li>接口的调用方式</li><li>参数的格式</li><li>响应格式</li><li>返回示例</li></ol>]]></content>
       
       
+      <categories>
+          
+          <category> web前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+            <tag> Ajax </tag>
+            
+        </tags>
       
     </entry>
     
@@ -35,9 +78,9 @@
             
             <tag> web </tag>
             
-            <tag> BOM </tag>
-            
             <tag> JS </tag>
+            
+            <tag> BOM </tag>
             
         </tags>
       
@@ -64,9 +107,9 @@
             
             <tag> web </tag>
             
-            <tag> JS </tag>
-            
             <tag> 网页特效 </tag>
+            
+            <tag> JS </tag>
             
         </tags>
       
@@ -93,9 +136,9 @@
             
             <tag> web </tag>
             
-            <tag> BOM </tag>
-            
             <tag> JS </tag>
+            
+            <tag> BOM </tag>
             
         </tags>
       
@@ -153,9 +196,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/movie/idnex.html"/>
-      <url>/movie/idnex.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -175,9 +218,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/movie/idnex.html"/>
+      <url>/movie/idnex.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
